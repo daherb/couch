@@ -24,13 +24,13 @@ void display (void) {
   glRotatef(xRotationAngle, 1.0f, 0.0f, 0.0f); // Rotate our object around the x axis
   glRotatef(yRotationAngle, 0.0f, 1.0f, 0.0f); // Rotate our object around the y axis
   glRotatef(zRotationAngle, 0.0f, 0.0f, 1.0f); // Rotate our object around the z axis
-  glScalef(1.0f,0.2f,0.5f);
+  glScalef(1.0f,0.3f,0.5f);
   glutWireCube(2.0f); // Render the primitive
-  glScalef(1.0f,5.0f,2.0f);
-  glTranslatef(0.0f,0.3f,-0.75f);
-  glScalef(1.2f,0.5f,0.2f);
+  glScalef(1.0f,3.3f,2.0f);
+  glTranslatef(0.0f,0.4f,-0.75f);
+  glScalef(1.2f,0.7f,0.2f);
   glutWireCube(2.0f);
-  glScalef(0.84f,2.0f,5.0f);
+  glScalef(0.84f,1.43f,5.0f);
   glTranslatef(-1.0f,-0.1f,0.2f);
   glScalef(0.25f,0.25f,0.8f);
   glutWireCylinder(1.0f, 1.5f, 10.0f, 1.0f);
@@ -74,7 +74,7 @@ int main(int argc, char **argv)
   glutInit(&argc, argv); // Initialize GLUT
   glutInitDisplayMode (GLUT_SINGLE); // Set up a basic display buffer (only single buffered for now)
   glutCreateWindow("GLEW Test");
-  glutInitWindowSize (500, 500); // Set the width and height of the window
+  glutInitWindowSize (800, 600); // Set the width and height of the window
   glutInitWindowPosition (100, 100); // Set the position of the window
   GLenum err = glewInit();
   if (GLEW_OK != err)
